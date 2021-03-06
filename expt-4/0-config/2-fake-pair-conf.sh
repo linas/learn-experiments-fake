@@ -18,3 +18,8 @@ export COGSERVER_CONF=config/opencog-pairs-fake.conf
 
 # URL for the database where pair counts will be accumulated
 export ROCKS_DB_URL=rocks://${DATA_DIR}/fake_pairs.rdb
+
+# File processing grunge
+export MSG="Splitting and word-pair counting"
+export IN_PROCESS_DIR=pair-split
+export COMPLETED_DIR=pair-counted
