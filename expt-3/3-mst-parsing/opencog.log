@@ -1,0 +1,63 @@
+[2021-03-06 02:24:27:509] [WARN] No config file found!
+
+[2021-03-06 02:24:27:509] [WARN] Searched for "config/opencog-pairs-fake.conf"
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ./
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../../
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../../../
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ./lib/
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../lib/
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../lib/
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../../lib/
+
+[2021-03-06 02:24:27:509] [WARN] Searched at ../../../../lib/
+
+[2021-03-06 02:24:27:509] [WARN] Searched at /usr/local/etc
+
+[2021-03-06 02:24:27:509] [WARN] Searched at /etc/opencog
+
+[2021-03-06 02:24:27:509] [WARN] Searched at /etc
+
+[2021-03-06 02:24:27:509] [ERROR] unable to open file "config/opencog-pairs-fake.conf" (/home/ubuntu/src/cogutils/opencog/util/Config.cc:204)
+	Stack Trace:
+	2: /usr/local/lib/opencog/libcogutil.so (opencog::Logger::logva(opencog::Logger::Level, char const*, __va_list_tag*) +0x11a) [0x7f0b51d2679a]
+	3: /usr/local/lib/opencog/libcogutil.so (opencog::Logger::Error::operator()(char const*, ...) +0x99) [0x7f0b51d26959]
+	4: /usr/local/lib/opencog/libcogutil.so (opencog::StandardException::parse_error_message(char const*, __va_list_tag*, bool) +0x91) [0x7f0b51d144c1]
+	5: /usr/local/lib/opencog/libcogutil.so (opencog::StandardException::parse_error_message(char const*, char const*, __va_list_tag*, bool) +0xaa) [0x7f0b51d1457a]
+	6: /usr/local/lib/opencog/libcogutil.so (opencog::IOException::IOException(char const*, char const*, ...) +0xba) [0x7f0b51d1495a]
+	7: /usr/local/lib/opencog/libcogutil.so (àôÎƒ„U +0x1c843) [0x7f0b51cfc843]
+	8: /usr/local/lib/opencog/libguile-cogserver.so (opencog::CogServerSCM::start_server(opencog::AtomSpace*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) +0xea) [0x7f0b50387eea]
+	9: /usr/local/lib/opencog/libguile-cogserver.so (opencog::SchemePrimitive<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, opencog::CogServerSCM, opencog::AtomSpace*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>::invoke(scm_unused_struct*) +0x105) [0x7f0b50388a25]
+	10: /usr/local/lib/opencog/libsmob.so (opencog::PrimitiveEnviron::do_call(scm_unused_struct*, scm_unused_struct*) +0x2e) [0x7f0b51d858de]
+	11: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0xbc8e2) [0x7f0b5b83c8e2]
+	12: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x1b5) [0x7f0b5b843705]
+	13: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x2b) [0x7f0b5b7be30b]
+	14: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x5a) [0x7f0b5b7be36a]
+	15: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x4a) [0x7f0b5b817f0a]
+	16: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x56651) [0x7f0b5b7d6651]
+	17: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x38d9e) [0x7f0b5b7b8d9e]
+	18: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0xc0e39) [0x7f0b5b840e39]
+	19: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x1b5) [0x7f0b5b843705]
+	20: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x1e) [0x7f0b5b7bd0fe]
+	21: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x3e9d1) [0x7f0b5b7be9d1]
+	22: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x51) [0x7f0b5b8380f1]
+	23: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x3936c) [0x7f0b5b7b936c]
+	24: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x39) [0x7f0b5b7b9409]
+	25: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0xb6a61) [0x7f0b5b836a61]
+	26: /lib/x86_64-linux-gnu/libgc.so.1 (àôÎƒ„U +0x2b) [0x7f0b5b52b37b]
+	27: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x2c) [0x7f0b5b836e0c]
+	28: /lib/x86_64-linux-gnu/libguile-3.0.so.1 (àôÎƒ„U +0x46) [0x7f0b5b7d67e6]
+	29: guile (àôÎƒ„U +0x1188) [0x55848344f188]
+	30: /lib/x86_64-linux-gnu/libc.so.6 (àôÎƒ„U +0xf3) [0x7f0b5b5af0b3]
+	31: guile (àôÎƒ„U +0x121e) [0x55848344f21e]
+
