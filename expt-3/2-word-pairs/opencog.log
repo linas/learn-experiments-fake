@@ -1,4 +1,0 @@
-[2021-03-04 22:06:24:230] [INFO] ss_new_as: #<atomspace 1> parent=none
-[2021-03-04 22:06:24:230] [INFO] as_ref_count: nas #<atomspace 1> count=1
-[2021-03-04 22:07:27:012] [INFO] ss_new_as: #<atomspace 1> parent=none
-[2021-03-04 22:07:27:012] [INFO] as_ref_count: nas #<atomspace 1> count=1
