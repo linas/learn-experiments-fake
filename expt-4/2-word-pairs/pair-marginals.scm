@@ -9,9 +9,13 @@
 ;
 (load "../common/cogserver-rocks.scm")
 
+(fetch-all-words)
+
 ; Init the statistics objects.
 (define ala (make-any-link-api))
 (define asa (add-pair-stars ala))
+
+(asa 'fetch-pairs)
 
 ; Compute the statistics
 (batch-pairs asa)
