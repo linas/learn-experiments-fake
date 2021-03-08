@@ -39,14 +39,30 @@ use Socket;
 my $server = $ARGV[0];
 my $port = $ARGV[1];
 
+my $scnt=0;
 # Takes just one argument: string to send.
 sub send_nowait
 {
 	socket(SOCKET, PF_INET, SOCK_STREAM, (getprotobyname('tcp'))[2])
 		or die "Can't create a socket $!\n";
 
-	connect(SOCKET, pack_sockaddr_in($port, inet_aton($server)))
-		or die "Can't connect to port $port! \n";
+	my $rc = connect(SOCKET, pack_sockaddr_in($port, inet_aton($server)));
+	if (not $rc) {
+		# die "duuude Can't connect to port $port! \n";
+		print "duuude like Can't connect to port $port! rc=$rc<<\n";
+		my $i=0;
+		sleep 1;
+		while ($i<100 and not $rc)
+		{
+			$rc = connect(SOCKET, pack_sockaddr_in($port, inet_aton($server)));
+			print "retry $i >>$rc<<\n";
+			if (not $rc) { sleep 1; }
+			$i++;
+		}
+	} else {
+		$scnt++;
+		# print "sending $scnt\n";
+	}
 
 	# Two dots: one to exit scheme, one to exit cogserver prompt.
 	print SOCKET "$_[0]\n.\n.\n";
