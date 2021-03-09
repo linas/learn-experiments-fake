@@ -8,6 +8,9 @@ export DICT_DIR=$TEXT_DIR/fake-lang
 # Directory where corpora files will be written
 export CORPORA_DIR=$TEXT_DIR/fake-corpus
 
+# The file that contains the dictionary configuration information.
+export DICT_CONF=1-dict-conf.scm
+
 # The length of the shortest and the longest sentences to generate.
 # Sentences between these lengths (inclusive) will be generated.
 SHORTEST=5
