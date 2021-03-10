@@ -5,7 +5,7 @@
 # ------------
 
 # Directory where corpora files can be found
-export CORPORA_DIR=$TEXT_DIR/fake-corpus
+export CORPORA_DIR=$TEXT_DIR/pair-corpus
 
 # Disable sentence splitting.
 export SENTENCE_SPLIT=false
@@ -14,7 +14,7 @@ export SENTENCE_SPLIT=false
 export HOSTNAME=localhost
 export PORT=17008
 export PROMPT="scheme@(fake-pairs)> "
-export COGSERVER_CONF=2-cogserver/cogserver-pairs-fake.conf
+export COGSERVER_CONF=${CONFIG_DIR}/2-cogserver/cogserver-pairs-fake.conf
 
 # Scheme function name for word-pair counting
 export OBSERVE="observe-text"
