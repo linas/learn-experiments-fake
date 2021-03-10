@@ -8,19 +8,18 @@
 # ----------
 
 # Location where processing scripts are installed.
-export COMMON_DIR=/usr/local/share/opencog/learn/run-common
-export COMMON_DIR=/home/ubuntu/run-common
+export COMMON_DIR=/home/ubuntu/src/learn/run-common
 
 # Location where the text corpus and the dictionary files are located.
 # This allows different corpora to be used in different experiments.
-export TEXT_DIR=/home/ubuntu/text/expt-42
+export TEXT_DIR=/home/ubuntu/run/expt-8
 
 # Location where the RocksDB databases are kept. This allows different
 # experiments to re-use the same filenames, changing only the directory.
 # It is recommended that this be located on an SSD disk, for
 # performance.
 # If you are using Postgres, just delete `ROCKS_DATA_DIR`.
-export ROCKS_DATA_DIR=/home/ubuntu/data/expt-42
+export ROCKS_DATA_DIR=/home/ubuntu/data/expt-8
 
 # Directory in which configuration parameters (including this file)
 # are located. Obtained automatically; don't change.
