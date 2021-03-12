@@ -111,7 +111,7 @@ guile -l ${COMMON_DIR}/cogserver-gram.scm -c "(sleep 150000000)" &
 sleep 3
 
 # Example. Don't do this unless you mean it.
-echo $GRAM_CLUSTER | nc $HOSTNAME $PORT >> /dev/null
+echo $GRAM_CLUSTER | nc $HOSTNAME $PORT
 
 # Shut down the server.
 echo Done clustering
