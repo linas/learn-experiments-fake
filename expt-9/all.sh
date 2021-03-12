@@ -104,9 +104,6 @@ else
 	exit -1
 fi
 
-echo duuude done for now
-exit 0
-
 # Run the classification cogserver
 guile -l ${COMMON_DIR}/cogserver-gram.scm -c "(sleep 150000000)" &
 
