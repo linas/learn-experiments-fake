@@ -13,5 +13,5 @@ export COGSERVER_CONF=${CONFIG_DIR}/4-cogserver/cogserver-gram-fake.conf
 # URL for the database where disjunct counts will be accumulated
 # ROCKS_DB_URL=rocks://${ROCKS_DATA_DIR}/gram-1.rdb
 # ROCKS_DB_URL=rocks://${ROCKS_DATA_DIR}/gram-2.rdb
-ROCKS_DB_URL=rocks://${ROCKS_DATA_DIR}/mpg_parse.rdb
-export STORAGE_NODE="(RocksStorageNode \"${ROCKS_DB_URL}\")"
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-1.rdb
+export STORAGE_NODE="(RocksStorageNode \"rocks://${GRAM_DB}\")"
