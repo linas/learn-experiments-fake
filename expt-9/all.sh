@@ -45,7 +45,10 @@ echo "(exit-server)" | nc $HOSTNAME $PORT >> /dev/null
 sleep 1
 
 # Compute the pair marginals.
+echo "Start computing the pair marginals"
 guile -s ${COMMON_DIR}/marginals-pair.scm
+echo "Finish computing the pair marginals"
+echo -e "\n\n\n"
 
 # ------------------------
 # Step three - MST parsing and disjunct counting
@@ -83,7 +86,13 @@ echo "(exit-server)" | nc $HOSTNAME $PORT >> /dev/null
 sleep 1
 
 # Compute the disjunct marginals.
+echo "Start computing the disjunct marginals"
 guile -s ${COMMON_DIR}/marginals-mst.scm
+echo "Finish computing the disjunct marginals"
+echo -e "\n\n\n"
+
+echo "duude wtf post mst"
+ps ax |grep guile
 
 # ------------------------
 # Step four - Clustering of grammatical classes
@@ -104,15 +113,21 @@ else
 	exit -1
 fi
 
+echo "duuude wtf proty=$PORT"
+echo "duuude wtf confuy=$COGSERVER_CONF"
+ps ax |grep guile
+
 # Run the classification cogserver
 guile -l ${COMMON_DIR}/cogserver-gram.scm -c "(sleep 150000000)" &
 
 # Wait for the cogserver to intialize.
 sleep 3
 
+echo "duuude pre-clustproty=$PORT"
 # Example. Don't do this unless you mean it.
-echo $GRAM_CLUSTER | nc $HOSTNAME $PORT
+echo -e "$GRAM_CLUSTER\n.\n." | nc $HOSTNAME $PORT
 
+echo "duuude post-clustproty=$PORT"
 # Shut down the server.
 echo Done clustering
 echo "(exit-server)" | nc $HOSTNAME $PORT >> /dev/null
