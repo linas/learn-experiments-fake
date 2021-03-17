@@ -1,0 +1,63 @@
+
+a the:
+(TB- & TC+ & TC+) or
+(TE- & TD- & TF+) or
+(TE- & TG- & TC+) or
+(TE- & TG- & TF+) or
+(TB- & TF+ & TH+ & TC+) or
+(TE- & TD- & TC+) or
+(TE- & TC+) or
+(TB- & TC+ & TF+) or
+(TE- & TB- & TC+) or
+(TB- & TC+ & TH+ & TF+) or
+(TB- & TF+ & TH+ & TF+) or
+(TE- & TB- & TF+) or
+(TB- & TC+) or
+(TB- & TF+ & TC+) or
+(TB- & TF+ & TF+) or
+(TB- & TC+ & TH+ & TC+) or
+(TE- & TF+);
+
+
+LEFT-WALL:
+(TB+ & TI+ & TJ+ & TB+ & TK+) or
+(TB+ & TI+) or
+(TB+ & TK+) or
+(TB+ & TI+ & TJ+ & TB+ & TI+) or
+(TL- & TE+) or
+(TL- & TH- & TE+ & TM+) or
+(TL- & TH- & TE+ & TN+) or
+(TO- & TH- & TE+ & TN+) or
+(TO- & TE+) or
+(TO- & TH- & TE+ & TM+) or
+(TO- & TJ- & TE+);
+
+saw chased:
+(TL- & TE+) or
+(TL- & TH- & TE+ & TM+) or
+(TL- & TH- & TE+ & TN+) or
+(TO- & TH- & TE+ & TN+) or
+(TO- & TE+) or
+(TO- & TH- & TE+ & TM+) or
+(TO- & TJ- & TE+);
+
+dog:
+(TF- & TL+ & TG+ & TP+) or
+(TF- & TQ- & TF- & TK-) or
+(TF- & TM- & TF- & TK-) or
+(TF- & TL+ & TG+ & TR+) or
+(TF- & TR- & TF- & TK-) or
+(TF- & TL+) or
+(TF- & TK-);
+
+
+bird mouse cat squirrel:
+(TC- & TO+ & TD+ & TS+) or
+(TC- & TS- & TC- & TI-) or
+(TC- & TN- & TC- & TI-) or
+(TC- & TO+ & TD+ & TQ+) or
+(TC- & TP- & TC- & TI-) or
+(TC- & TO+) or
+(TC- & TI-) or
+(TC- & TI- & TO+);
+
