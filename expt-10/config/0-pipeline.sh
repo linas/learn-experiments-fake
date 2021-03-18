@@ -28,10 +28,6 @@ export CONFIG_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # The master config file, which is this file.  Don't change.
 export MASTER_CONFIG_FILE=${CONFIG_DIR}/$( basename "${BASH_SOURCE[0]}" )
 
-# File containing artificial-language generation configuration.
-# Change this as desired.
-export GEN_CONF_FILE=$CONFIG_DIR/1-corpus-conf.sh
-
 # File containing pair-counting configuration.
 # Change this as desired.
 export PAIR_CONF_FILE=$CONFIG_DIR/2-pair-conf-fake.sh
