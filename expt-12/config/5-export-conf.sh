@@ -13,7 +13,9 @@ export PROMPT="scheme@(export)"
 export COGSERVER_CONF=${CONFIG_DIR}/5-cogserver/cogserver-export-fake.conf
 
 # Location of the database where the grammatical classes are held
-export EXPORT_DB=${ROCKS_DATA_DIR}/gram-1.rdb
+export EXPORT_DB=${ROCKS_DATA_DIR}/gram-5.rdb
+export EXPORT_DB=${ROCKS_DATA_DIR}/gram-no-class-1.rdb
+export EXPORT_DB=${ROCKS_DATA_DIR}/gram-6.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${EXPORT_DB}\")"
 
 # Path to the file that will hold the Link Grammar dicationary.
