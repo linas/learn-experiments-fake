@@ -8,7 +8,7 @@
 #
 # IPv4 hostname and port number of where the cogserver is running.
 export HOSTNAME=localhost
-export PORT=20008
+export PORT=20018
 export PROMPT="scheme@(export)"
 export COGSERVER_CONF=${CONFIG_DIR}/5-cogserver/cogserver-export-fake.conf
 
