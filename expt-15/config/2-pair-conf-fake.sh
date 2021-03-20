@@ -12,7 +12,7 @@ export SENTENCE_SPLIT=false
 
 # IPv4 hostname and port number of where the cogserver is running.
 export HOSTNAME=localhost
-export PORT=17008
+export PORT=17018
 export PROMPT="scheme@(fake-pairs)"
 export COGSERVER_CONF=${CONFIG_DIR}/2-cogserver/cogserver-pairs-fake.conf
 
