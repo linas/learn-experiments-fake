@@ -65,11 +65,13 @@ echo ya
 echo ya
 echo ya go cluster lets see utput
 
-echo -e "(foreach (lambda (n) (sleep 1) (format #t \"ping ~A\" n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
+echo -e "(for-each (lambda (n) (sleep 1) (format #t \"ping ~A\" n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
+echo -e "(for-each (lambda (n) (sleep 1) (display \"wtf dis \")(display n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
 echo -e "(display \"whazzup\")(newline)\n.\n." | nc $HOSTNAME $PORT
 echo -e "(sleep 3)(display \"sleepy\")(newline)\n.\n." | nc $HOSTNAME $PORT
 echo -e "(display \"fair dinkum\")(newline)\n.\n." | nc $HOSTNAME $PORT
-echo -e "(foreach (lambda (n) (sleep 1) (format #t \"pong ~A\" n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
+echo -e "(for-each (lambda (n) (sleep 1) (format #t \"pong ~A\" n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
+echo -e "(for-each (lambda (n) (sleep 1) (display \"freakcis \")(display n)(newline)) (iota 10 1)\n.\n." | nc $HOSTNAME $PORT
 
 # Perform the desired clustering.
 # The trailing newline-dots exit the cogserver shell,
