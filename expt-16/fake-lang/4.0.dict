@@ -1,6 +1,6 @@
 %
 % Randomly generated dictionary
-% Hand-hacked to add left-wall
+% Hand-hacked to add left-wall and ending punctuation.
 %
 % Version: 0.1
 % Num link types: 6
@@ -21,7 +21,9 @@
 #define dictionary-version-number 5.9.0;
 #define dictionary-locale C;
 
-LEFT-WALL: WV+;
+LEFT-WALL: WV+ & RW+;
+
+!: RW-;
 
 <pos-a>: (D+ & B+) or (C-) or (C- & D+ & C-) or (B+ & A+) or (E- & F+ & A-) or (D-) or (C+ & D+ & B+) or (B-) or (A+ & A-) or (D+ & C+);
 
