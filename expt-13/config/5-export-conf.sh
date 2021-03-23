@@ -18,7 +18,7 @@ export STORAGE_NODE="(RocksStorageNode \"rocks://${EXPORT_DB}\")"
 
 # Path to the file that will hold the Link Grammar dicationary.
 # The file itself *must* be named `dict.db`, or else LG will fail.
-export LG_DICT_EXPORT=${TEXT_DIR}/learned-gram-4b/dict.db
+export LG_DICT_EXPORT=${TEXT_DIR}/learned-gram-4c/dict.db
 
 # The locale to apply to the dictionary.
 export LG_DICT_LOCALE=EN_us
