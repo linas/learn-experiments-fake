@@ -17,6 +17,7 @@ export OBSERVE="observe-mpg"
 # URL for the database where disjunct counts will be accumulated
 export MST_DB=${ROCKS_DATA_DIR}/mpg_parse.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${MST_DB}\")"
+export STORAGE_NODE="(PostgresStorageNode \"postgres:///expt_16_shape\")"
 
 # Directories where in-process and completed files will be moved.
 export IN_PROCESS_DIR=mpg-split

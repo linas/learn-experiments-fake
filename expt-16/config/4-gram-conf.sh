@@ -12,9 +12,12 @@ export COGSERVER_CONF=${CONFIG_DIR}/4-cogserver/cogserver-gram-fake.conf
 
 # URL for the database where disjunct counts will be accumulated
 export GRAM_DB=${ROCKS_DATA_DIR}/gram-1.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-2-discrim.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-3-fuzz.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/shape.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${GRAM_DB}\")"
 
 # Scheme function that will perform classification
+export GRAM_CLUSTER="(gram-classify-greedy-disinfo 3.0 4)"
 export GRAM_CLUSTER="(gram-classify-greedy-discrim 0.5 4)"
 export GRAM_CLUSTER="(gram-classify-greedy-fuzz 0.65 0.3 4)"
-export GRAM_CLUSTER="(gram-classify-greedy-disinfo 3.0 4)"
