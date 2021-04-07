@@ -17,7 +17,7 @@ export GRAM_DB=${ROCKS_DATA_DIR}/gram-3-fuzz.rdb
 export GRAM_DB=${ROCKS_DATA_DIR}/shape.rdb
 export GRAM_DB=${ROCKS_DATA_DIR}/gram-4-shape-disinfo.rdb
 export GRAM_DB=${ROCKS_DATA_DIR}/gram-5-shape-discrim.rdb
-export GRAM_DB=${ROCKS_DATA_DIR}/gram-6-junk.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-16-junk.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${GRAM_DB}\")"
 
 # Scheme function that will perform classification
