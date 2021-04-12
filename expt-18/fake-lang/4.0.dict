@@ -1,0 +1,88 @@
+%
+% Randomly generated dictionary
+% Hand-hacked to add left-wall and ending punctuation.
+%
+% Version: 0.1
+% Num link types: 6
+% Link type exponent: 0
+% Disjunct size: 3
+% Disjunct exponent: 0.5
+% Section size: 20
+% Number of POS: 10
+% Number of classes:  10
+% Class size: 8
+% Class exp: -0.1
+% Number of synonyms:  1
+% Synonym exponent: 0
+% Word-sense fraction: 0.0
+% Number of word-senses: 3
+% Word-sense exponent: 0.5
+%
+#define dictionary-version-number 5.9.0;
+#define dictionary-locale C;
+
+LEFT-WALL: WV+ & RW+;
+
+!: RW-;
+
+<pos-a>: (D+ & B+) or (C-) or (C- & D+ & C-) or (B+ & A+) or (E- & F+ & A-) or (D-) or (C+ & D+ & B+) or (B-) or (A+ & A-) or (D+ & C+);
+
+<pos-b>: (B- & F- & A+) or (F+ & A-);
+
+<pos-c>: (E- & D+ & B-);
+
+<pos-d>: (E- & D- & B-) or (B-);
+
+<pos-e>: (B+) or (F- & C+) or (B- & F- & E+) or (D- & A-) or (C+ & C+) or (E- & B+) or (F+) or (D- & E+ & F+) or (E- & D+) or (D-) or (A-) or (E+ & A+) or (C-) or (A+ & A- & E-) or (F- & C+) or (E- & E+) or (E-) or (D-) or (C+ & C- & D-);
+
+<pos-f>: (B- & B- & D+);
+
+<pos-g>: (D- & B- & E+);
+
+<pos-h>: (A+ & F+);
+
+<pos-i>: (D- & C- & B-) or (C+ & A-) or (C-) or (C-) or (E+ & C+ & B+) or (B+ & C- & B+) or (F- & B+) or (F+) or (B-) or (C+) or (A- & E- & D+);
+
+<pos-j>: (C-) or (E-) or (E+) or (C+) or (F- & A+ & D-) or (B- & F- & B+) or (E+ & F+) or (F+);
+
+<wcl-a>: <pos-a> or <pos-e>;
+
+<wcl-b>: <pos-h> or <pos-g> or <pos-c> or <pos-g> or <pos-j> or <pos-c> or <pos-g>;
+
+<wcl-c>: <pos-a>;
+
+<wcl-d>: <pos-e> or <pos-b> or <pos-f> or <pos-h>;
+
+<wcl-e>: <pos-e> or <pos-c> or <pos-a> or <pos-b> or <pos-b> or <pos-j> or <pos-a> or <pos-e>;
+
+<wcl-f>: <pos-f> or <pos-a> or <pos-h> or <pos-c> or <pos-c> or <pos-h>;
+
+<wcl-g>: <pos-f> or <pos-h> or <pos-g>;
+
+<wcl-h>: <pos-f> or <pos-c> or <pos-c> or <pos-a>;
+
+<wcl-i>: <pos-g>;
+
+<wcl-j>: <pos-e> or <pos-b> or <pos-j>;
+
+a: <wcl-a> & WV-;
+
+b: <wcl-b>;
+
+c: <wcl-c>;
+
+d: <wcl-d>;
+
+e: <wcl-e>;
+
+f: <wcl-f>;
+
+g: <wcl-g>;
+
+h: <wcl-h>;
+
+i: <wcl-i>;
+
+j: <wcl-j>;
+
+<UNKNOWN-WORD>:  XXXXXX+;
