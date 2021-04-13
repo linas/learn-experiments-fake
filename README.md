@@ -18,3 +18,7 @@ A quick guide:
 * expt-1, expt-2 - Never checked into git. Pipeline commisioning.
 * expt-3 through expt-9 - Pipeline commisioning, first science runs.
   Deleted 18 March 2021.
+* expt-10 through expt-18 start resucitating the shape code, and
+  restart work on connector merging. Also debug rocksdb version 5.17
+  in expt-17 and debug orcksdb 6.19 in expt-18 See
+  https://github.com/opencog/atomspace-rocks/issues/10
