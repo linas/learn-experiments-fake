@@ -13,7 +13,7 @@ export COGSERVER_CONF=${CONFIG_DIR}/4-cogserver/cogserver-gram-fake.conf
 # URL for the database where disjunct counts will be accumulated
 export GRAM_DB=${ROCKS_DATA_DIR}/gram-1.rdb
 export GRAM_DB=${ROCKS_DATA_DIR}/shape.rdb
-export GRAM_DB=${ROCKS_DATA_DIR}/gram-1-junk.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-25-junk.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${GRAM_DB}\")"
 
 # Scheme function that will perform classification
