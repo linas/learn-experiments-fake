@@ -1,0 +1,14 @@
+#
+# Corpus for language: "/home/ubuntu/run/expt-16/fake-lang"
+# Sentence length: 3
+# Requested corpus size: 25000
+# Dictionary version 5.9.0
+# Number of categories: 11
+# Linkages found: 4
+# Linkages generated: 4
+#
+e a !
+e a !
+j a !
+a h !
+# Bye.
