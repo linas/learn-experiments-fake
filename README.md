@@ -20,5 +20,7 @@ A quick guide:
   Deleted 18 March 2021.
 * expt-10 through expt-18 start resucitating the shape code, and
   restart work on connector merging. Also debug rocksdb version 5.17
-  in expt-17 and debug orcksdb 6.19 in expt-18 See
+  in expt-17 and debug rocksdb 6.19 in expt-18 See
   https://github.com/opencog/atomspace-rocks/issues/10
+* expt-19 (25 May 2021) is the first run with what I think is correct,
+  working shape code. Its a copy of the same corpus as expt-18.
