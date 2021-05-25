@@ -22,5 +22,6 @@ A quick guide:
   restart work on connector merging. Also debug rocksdb version 5.17
   in expt-17 and debug rocksdb 6.19 in expt-18 See
   https://github.com/opencog/atomspace-rocks/issues/10
+  Delete expt-17 and expt-18 on 25 May 2021
 * expt-19 (25 May 2021) is the first run with what I think is correct,
   working shape code. Its a copy of the same corpus as expt-18.

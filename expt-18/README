@@ -1,2 +1,0 @@
-This one is about testing rocksdb version 6.19 from 
-github to see if it still leaks file descs and blows up RAM
