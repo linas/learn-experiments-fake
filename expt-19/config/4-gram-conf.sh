@@ -12,6 +12,8 @@ export COGSERVER_CONF=${CONFIG_DIR}/4-cogserver/cogserver-gram-fake.conf
 # Location of the database where grammatical classes will be formed.
 export GRAM_DB=${ROCKS_DATA_DIR}/shape.rdb
 export GRAM_DB=${ROCKS_DATA_DIR}/gram-1.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/mst-marginals.rdb
+export GRAM_DB=${ROCKS_DATA_DIR}/gram-2.rdb
 export STORAGE_NODE="(RocksStorageNode \"rocks://${GRAM_DB}\")"
 
 # Scheme function that will perform classification

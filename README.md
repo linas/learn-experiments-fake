@@ -1,5 +1,17 @@
 
-Experimental configration data
+Fake Language Experiments
+=========================
+Experiments in learning fake, artificial languages.
+March-May 2021.  Abandoned, due to experimental and practical
+difficulties.  Basically:
+* Hard to debug, because no intuitive sense of the fake langauges.
+* Grammar ambiguity: there are many grammars that general equivalent
+  and nearly-equivalent languages.
+
+See the diary for details. Diary is at
+https://github.com/opencog/learn/tree/master/language-learning-diary
+
+Experimental configuration data
 ------------------------------
 
 This repo contains config files for running the language-learning
